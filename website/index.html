@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Weather Journal</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+ <body>
+<div id = "app" >
+  <div class ="headline">
+    <img src="./img/PartlyCloudy.svg" alt="cloudy">
+    <h4>Weather Journal App</h4>
+    <a href="">Github</a>
+  </div>
+  <div class="body">
+  <div class="body-holder">
+    <div class ="holder zip">
+      <label for="zip">Enter Zip Code:</label>
+      <input type="text" id="zip" placeholder="Enter Zip Code Here">
+    </div>
+    <div class ="holder feel">
+      <label for="feelings">How are you feeling today?</label>
+      <textarea class= "myInput" id="feelings" placeholder="Enter your feelings here" rows="9" cols="50"></textarea>
+    </div>
+    <button id="generate" type = "submit"> 
+      <img src="./img/add.png" alt="add">
+      <label for="add">Add Location</label>
+    </button>
+  </div>
+  <div class ="input-holder">
+    <div class="entry">
+      <div class = "title">Most Recent Entry</div>
+   <div id = "entryHolder">
+    <div class="icon">
+      <p id = "city"></p>
+    </div>
+    <div id = "date"></div> 
+      <p id = "temp"></p>
+      <p id = "weather"></p>
+    <div class="weatherContent">
+      <p id = "feelsLike"></p>
+      <p id = "humidity"></p>
+    </div>
+    <div class="weatherContent">
+      <p id = "visibility"></p>
+      <p id = "wind"></p>
+    </div>
+    <p id = "content"></p>
+  </div>
+    </div>
+  </div>
+  <div class="error ">
+    <p class="e-message" id="e-message"></p>
+</div>
+  </div>
+  </div>
+<script src="app.js" type="text/javascript"></script>
+
+</body>
+</html>
